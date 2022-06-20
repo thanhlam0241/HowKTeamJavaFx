@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PieChart.Controller">
+   <center>
+      <PieChart fx:id="pieChart" clockwise="false" title="Language Rate" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="25.0" prefWidth="684.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="C#" />
+            <TextField fx:id="csharp" />
+            <Label text="Java" />
+            <TextField fx:id="java" />
+            <Label text="Python" />
+            <TextField fx:id="python" />
+            <Button mnemonicParsing="false" onAction="#load" text="Load" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

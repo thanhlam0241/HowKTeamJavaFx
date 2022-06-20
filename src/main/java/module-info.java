@@ -31,4 +31,13 @@ module com.example.test {
 
     opens com.example.ImageView to javafx.fxml;
     exports com.example.ImageView;
+
+    opens com.example.FileChooser to javafx.fxml;
+    exports com.example.FileChooser;
+
+    opens com.example.WebView to javafx.fxml;
+    exports com.example.WebView;
+
+    opens com.example.PieChart to javafx.fxml;
+    exports com.example.PieChart;
 }
